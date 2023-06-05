@@ -1,0 +1,933 @@
+/*----- Stylesheet for Project -----*/
+* {
+  font-family: 'Poppins', sans-seriff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+body {
+  background: url('../img/bg_main_banner.svg')no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+/*----- Custom Scroll Bar CSS -----*/
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-button {
+  background: black;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: indigo;
+  border: 1px solid white;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: purple;
+  border: 1px solid whitesmoke;
+  transition: all 0.5s ease;
+}
+
+/*--- End of Custom Scroll Bar ---*/
+
+
+/*----- Header Navbar section -----*/
+#head {
+  margin-bottom: 30px;
+}
+.navbar-nav .nav-item a {
+  font-size: 17px;
+}
+.navbar-nav .nav-item a:is(:hover, :focus) {
+  color: rgb(199, 24, 199);
+}
+
+/*--- End of Header Navbar section ---*/
+
+
+/*----- Section -----*/
+section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*--- End of section ---*/
+
+
+/*----- Common span for Styling -----*/
+span {
+  color: greenyellow;
+  font-weight: 400;
+}
+/*--- End of Span ---*/
+
+
+/*----- Home -----*/
+#home {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#home p, #home h1 {
+  color: white;
+}
+/* ----- More btn -----*/
+.morebtn {
+  background-color: dodgerblue;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.morebtn:hover {
+  background-color: rgb(0, 128, 255);
+  box-shadow: 2px 2px 4px black;
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+}
+@media only screen and (max-width: 768px) {
+  .home-main {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/*--- End of Home section ---*/
+
+
+/*----- Home content main section start -----*/
+#home-cont-main {
+  backdrop-filter: saturate(130%) blur(10px);
+  padding: 50px 0;
+  border-top: 3px solid whitesmoke;
+  border-bottom: 3px solid whitesmoke;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#home-cont {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  padding-bottom: 20px;
+}
+/*--- End of Home content main section ---*/
+
+
+
+/*----- Subcribe Section Start -----*/
+#free-quote {
+  position: relative;
+  overflow: hidden;
+}
+.free-quote {
+  background-image: url(../img/quote-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 120px 0px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.free-quote .section-heading {
+  margin-bottom: 60px;
+}
+.free-quote .section-heading h1,
+.free-quote .section-heading h4 {
+  color: #fff;
+}
+.free-quote .section-heading .line-dec {
+  margin: 0 auto;
+  background-color: #fff;
+}
+.free-quote form {
+  background-color: #fff;
+  display: inline-block;
+  width: 100%;
+  min-height: 80px;
+  border-radius: 40px;
+  position: relative;
+  z-index: 1;
+}
+.free-quote form input {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 30px;
+  color: #afafaf;
+  font-weight: 400;
+  font-size: 15px;
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 1px solid #eee;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  position: relative;
+  z-index: 2;
+  outline: none;
+}
+.free-quote form button {
+  width: 100%;
+  height: 80px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  outline: none;
+  border: none;
+  margin-left: 30px;
+  background-color: #726ae3;
+  font-size: 15px;
+  color: #fff;
+}
+.free-quote form button:hover {
+  background-color: #4d43df;
+  transition: all 1s ease;
+}
+
+@media only screen and (max-width: 767px) {
+  .free-quote form input {
+    margin-left: 0px;
+    padding: 0px 30px;
+  }
+  .free-quote form button {
+    margin-left: 0px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 0px;
+  }
+}
+
+/*--- End of Subscribe section ---*/
+
+
+/*----- About Page Section Start -----*/
+#about {
+  overflow: hidden;
+  padding-top: 50px;
+  backdrop-filter: saturate(130%) blur(10px);
+  border-top: 2px solid white;
+  border-radius: 10px;
+}
+.about-main p, .about-main h1 {
+  color: white;
+}
+.about-image img:hover {
+  transform: scale(102%);
+  transition: all 0.5s ease;  
+}
+
+#about-cont {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: saturate(130%) blur(10px);
+  padding: 30px 0;
+  margin-bottom: 20px;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 15px 0;
+}
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+}
+.box{
+  padding: 10px 5px;
+  overflow: hidden;
+  color: white;
+  border: 2px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+}
+.box:hover{
+  transform: scale(102%);
+  transition: all 1s ease;
+}
+
+/*--- End of About Page section ---*/
+
+
+/*----- Careers page section -----*/
+#careers {
+  overflow: hidden;
+  padding-top: 20px;
+  backdrop-filter: saturate(130%) blur(5px);
+}
+#careers p, #careers h1 {
+  color: white;
+}
+.careers-image img {
+  border:2px solid lightblue;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .careers-main {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+#careers-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url(../img/bg-imageblue.jpg) no-repeat;
+  background-size: cover;
+  border-top: 2px solid white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#careers-form form {  
+  color: white;
+  padding: 35px;
+  background: transparent;
+  backdrop-filter: saturate(110%) blur(20px);
+  border: 2px solid lightgray;
+  border-radius: 20px; 
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, .5);
+  border-radius: 30px;
+}
+#careers-form input, #careers-form textarea {
+  color: white;
+  background: transparent;
+  box-shadow: 2px 2px 3px black;
+  border-bottom: 2px solid whitesmoke;
+}
+#careers-form input::placeholder, #careers-form textarea::placeholder {
+  color: whitesmoke;
+}
+#careers-form input:is(:focus, :valid) {
+  border-bottom: 2px solid crimson;
+  box-shadow: 4px 4px 6px black;
+}
+#careers-form textarea:is(:focus, :valid) {
+  border-bottom: 2px solid crimson;
+}
+.submit-careersbtn {
+  color: white;
+  margin-top: 10px;
+  padding: 6px 25px;
+  background-color: rgb(228, 32, 6);
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.submit-careersbtn:is(:hover, :focus) {
+  background-color: rgb(25, 25, 228);
+  border: 2px solid white;
+  box-shadow: 2px 3px 3px black;
+  transition: all 0.7s ease;
+  transform: scale(1.1);
+}
+.choose-file-btn {
+  margin-top: 5px;
+  border-radius: 10px;
+  border-top: 2px solid crimson;
+  box-shadow: 2px 2px 3px black;
+}
+.upload-btn {
+  padding: 2px 4px;
+  margin-top: 5px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: dodgerblue;
+}
+.upload-btn:hover {
+  background-color: rgb(0, 107, 214);
+  box-shadow: 2px 2px 3px black;
+  transition: all 1s ease;
+}
+
+/*--- End of careers page section ---*/
+
+
+/*----- Contact-main section -----*/
+#contact-main {
+  position: relative;
+  background-color: black;
+  border-top: 2px solid orchid;
+  border-bottom: 2px solid orchid;
+}
+.contact-sec p {
+  color: white;
+}
+.contactbtn:hover {
+  transition: all 1s ease;
+  color: white;
+}
+@media only screen and (max-width: 570px) {
+  .contact-main-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*--- End of Contact-main section ---*/
+
+
+/*----- Contact Page section -----*/
+#contact {
+  background: url(../img/planet_purple.png)no-repeat;
+  background-position: bottom start;
+  background-size: 40%;
+}
+
+#contact form { 
+  color: white;
+  padding: 35px;
+  background: transparent;
+  border: 2px solid gray;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  border-radius: 30px;
+}
+#contact input, #contact textarea {
+  color: white;
+  background: transparent;
+  box-shadow: 2px 2px 3px black;
+  border-bottom: 2px solid rgb(207, 4, 207);
+}
+#contact input::placeholder, #contact textarea::placeholder {
+  color: gray;
+}
+#contact input:is(:focus, :valid) {
+  border-bottom: 2px solid dodgerblue;
+}
+#contact textarea:is(:focus, :valid) {
+  border-bottom: 2px solid dodgerblue;
+}
+.submit-contactbtn {
+  color: white;
+  margin-top: 11px;
+  padding: 8px 40px;
+  background-color: rgb(228, 32, 6);
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.submit-contactbtn:is(:hover, :focus) {  
+  background-color: rgb(42, 42, 165);
+  border: 2px solid white;
+  box-shadow: 2px 3px 3px black;
+  transition: all 0.7s ease;
+  transform: scale(103%);
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-head {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+#contact-address {
+  position: relative;
+  background: black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+/*--- End of Contact Page section ---*/
+
+
+/*----- Back Home Button  -----*/
+.back-homeBtn {
+  background-color: transparent;
+  border: 2px solid rgb(248, 9, 248);
+  border-radius: 20px;
+  color: rgb(248, 9, 248);
+  padding: 10px 20px;
+}
+.back-homeBtn:hover {
+  background-color: rgb(248, 9, 248);
+  border: 2px solid white;
+  color: white;
+  transition: all 2s ease;
+}
+/*--- End of Back Home Button ---*/
+
+
+/*----- Contact hover button -----*/
+.contact-movebtn {
+  padding: 8px 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19),
+              0 6px 6px rgba(0,0,0,0.23);
+  color: white;
+  background-color: rgb(185, 20, 218);
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;            
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  transition: all 1s;
+}
+.contact-movebtn:before, .contact-movebtn:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 0px solid white;
+  transition: all 1s;
+}
+.contact-movebtn:before {
+  bottom: -1px;
+  right: -1px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  transform: rotate(180deg);
+}
+.contact-movebtn:after {
+  top: -1px;
+  left: -1px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+}
+.contact-movebtn:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background: rgb(42, 42, 165);
+  box-shadow: 2px 1px 2px white;
+}
+.contact-movebtn:hover:after, .contact-movebtn:hover:before {
+  width: 105%;
+  height: 120%;
+}
+
+/*--- End of Contact hover button ---*/
+
+
+/*----- Services-page section start -----*/
+#services-offer-mainhead {
+  background: url(../img/planet_purple.png)no-repeat;
+  background-position: bottom end;
+  background-size: 40%;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#services-off-main {
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: saturate(130%) blur(10px);
+  border-top: 3px solid whitesmoke;
+  border-bottom: 3px solid whitesmoke;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#services-offer {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  #services-offer {
+    margin-bottom: 100px;
+  }
+}
+
+/*--- End of Services-page Section ---*/
+
+
+/*----- Voice & Data Services -----*/
+#voicedata-serv-mainhead {
+  background: url(../img/planet_purple.png)no-repeat;
+  background-position: bottom start;
+  background-size: 40%;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#voicedata-serv-main {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: saturate(190%) blur(20px);
+  padding: 50px 0;
+  border-top: 3px solid whitesmoke;
+  border-bottom: 3px solid whitesmoke;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#voicedata-serv {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  color: white;
+}
+.voicedata-head {
+  font-style: italic;
+}
+@media only screen and (max-width: 768px) {
+  #voicedata-serv {
+    margin-top: 100px;
+  }
+}
+
+/*--- End of Voice & Data Services ---*/
+
+
+/*----- Software Services -----*/
+#software-serv-mainhead {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#software-serv-main {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: saturate(180%) blur(5px);
+  padding: 50px 0;
+  border-top: 2px solid whitesmoke;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: 3px solid whitesmoke;
+}
+#software-serv {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  color: white;
+}
+.soft-head {
+  font-style: italic;
+}
+@media only screen and (max-width: 768px) {
+  #software-serv {
+    margin-top: 100px;
+  }
+}
+/*--- End of Voice Services ---*/
+
+
+/*----- Request callback button -----*/
+.req-callback {
+  padding: 10px 15px;
+  background-color: crimson;
+  color: white;
+  border-radius: 22px;
+  box-shadow: 2px 3px 5px black;
+  margin: 10px 0;
+}
+.req-callback:is(:hover, :focus) {
+  background-color: #3b30d6;
+  box-shadow: 2px 5px 8px black;
+  transition: all 0.2s ease;
+  transform: scale(102%);
+}
+
+/*--- End of Request callback button ---*/
+
+
+/*----- Clients section -----*/
+/*--- Wrapper ---*/
+#our-clients {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/bg-imageblue.jpg)no-repeat;
+  background-size: cover;
+}
+.wrapper {
+  padding: 100px 0;
+  align-items: center;
+  width: 100%;
+}
+.carousel {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 25px;
+  overflow: hidden;
+}
+.carousel .card {
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+  padding: 70px 40px;
+  font-weight: 400;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+.carousel .card img {
+  border-radius: 10px;
+}
+.carousel .card-1 { 
+  background: whitesmoke;
+}
+.carousel .card-2 {
+  background: whitesmoke;
+}
+.carousel .card-3 {
+  background: whitesmoke;
+}
+.carousel .card-4 {
+  background: whitesmoke;
+}
+.carousel .card-5 {
+  background: whitesmoke;
+}
+.carousel .card-6 {
+  background: whitesmoke;
+}
+.carousel .card-7 {
+  background: whitesmoke;
+}
+
+/*--- End of clients Wrapper section ---*/
+
+
+/*----- Floating button ------*/
+/*--- Top scroll button ---*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 105px;
+  right: 13px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color: rgb(13, 133, 253);
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 50%;
+}
+#myBtn:hover {
+  background-color: rgb(42, 42, 165);
+  box-shadow: 2px 2px 3px black;
+  transition: all 2s ease;
+}
+@media only screen and (max-width: 768px) {
+  #myBtn {
+    bottom: 155px;
+  }
+}
+
+/*--- End of Floating button ---*/
+
+
+/*----- Start Footer -----*/
+footer {
+  background: url(../img/footer-bg-v3.jpg)no-repeat;
+  background-size: cover;
+}
+.footer-main {
+  padding: 20px 0 10px 0;
+}
+.footer-main p {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+}
+.footer-main a {
+  color: crimson;
+  text-decoration: none;
+}
+.footer-main a:hover {
+  color: greenyellow;
+}
+.soc-icon i:hover {
+  color: black;
+}
+/*--- End of Footer ---*/
+
+
+/*----- Animate.css -----*/
+.home-main {
+  animation-delay: 2s;
+  animation-duration: 1s;
+}
+.home-image {
+  animation-delay: 2s;
+  animation-duration: 1s;
+} 
+.about-main {
+  animation-delay: 2s;
+  animation-duration: 1s;
+}
+.about-image {
+  animation-delay: 2s;
+  animation-duration: 1s;
+}
+.contact-form-anim {
+  animation-delay: 1s;
+  animation-duration: 0.5s;
+}
+
+/*--- End of Animate ---*/
+
+
+/*------ Reveal Animation section while scroll ------*/
+/*--- Right reveal ---*/
+.reveal {
+  transform: translateX(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/*--- Left reveal ---*/
+.reveal1 {
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal1.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/*--- Down reveal ---*/
+.reveal2 {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal2.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/*--- Up reveal ---*/
+.reveal3 {
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal3.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/*----- End of Reveal Animation section -----*/
+
+
+/*----- Js Preloader Start -----*/
+.js-preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  z-index: 9999;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+
+.js-preloader.loaded {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@-webkit-keyframes dot {
+  50% {
+      -webkit-transform: translateX(96px);
+      transform: translateX(96px);
+  }
+}
+
+@keyframes dot {
+  50% {
+      -webkit-transform: translateX(96px);
+      transform: translateX(96px);
+  }
+}
+
+@-webkit-keyframes dots {
+  50% {
+      -webkit-transform: translateX(-31px);
+      transform: translateX(-31px);
+  }
+}
+
+@keyframes dots {
+  50% {
+      -webkit-transform: translateX(-31px);
+      transform: translateX(-31px);
+  }
+}
+
+.preloader-inner {
+  position: relative;
+  width: 142px;
+  height: 40px;
+  background: #fff;
+}
+
+.preloader-inner .dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 15px;
+  background: #9904be;
+  border-radius: 50%;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-animation: dot 2.8s infinite;
+  animation: dot 2.8s infinite;
+}
+
+.preloader-inner .dots {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  margin-top: 12px;
+  margin-left: 31px;
+  -webkit-animation: dots 2.8s infinite;
+  animation: dots 2.8s infinite;
+}
+
+.preloader-inner .dots span {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  background: #ce16a0;
+  border-radius: 50%;
+}
+
+/*--- End of Js Preloader ---*/
